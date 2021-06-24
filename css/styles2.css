@@ -1,0 +1,1338 @@
+@font-face {
+    font-family: 'uoc-sans';
+    src: url("../fonts/UOCSans-Regular.woff2") format("woff2"), url("../fonts/UOCSans-Regular.woff") format("woff"), url("../fonts/UOCSans-Regular.ttf") format("truetype"), url("../fonts/UOCSans-Regular.svg#svgFontName") format("svg");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'uoc-sans';
+    src: url("../fonts/UOCSans-Italic.woff2") format("woff2"), url("../fonts/UOCSans-Italic.woff") format("woff"), url("../fonts/UOCSans-Italic.ttf") format("truetype"), url("../fonts/UOCSans-Italic.svg#svgFontName") format("svg");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'uoc-sans';
+    src: url("../fonts/UOCSans-Bold.woff2") format("woff2"), url("../fonts/UOCSans-Bold.woff") format("woff"), url("../fonts/UOCSans-Bold.ttf") format("truetype"), url("../fonts/UOCSans-Bold.svg#svgFontName") format("svg");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'uoc-serif';
+    src: url("../fonts/UOCSerif-Regular.woff2") format("woff2"), url("../fonts/UOCSerif-Regular.woff") format("woff"), url("../fonts/UOCSerif-Regular.ttf") format("truetype"), url("../fonts/UOCSerif-Regular.svg#svgFontName") format("svg");
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+/** header height for mobile devices **/
+
+
+/* Rem Units */
+
+
+/* Rem Units */
+
+
+/* Prefix */
+
+
+/* Flexbox */
+
+
+/* SASS functions */
+
+
+/* Styles */
+
+
+/* Others */
+
+
+/* line 95, source/assets/scss/mixins/_utils.scss */
+
+.text-justify {
+    text-align: justify;
+}
+
+
+/* line 8, source/assets/fw-styles/styles.scss */
+
+.xx-beta-flag:after {
+    content: "beta";
+    position: fixed;
+    width: 160px;
+    height: 50px;
+    background: #000078;
+    top: 14px;
+    left: -40px;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 54px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/* line 28, source/assets/fw-styles/styles.scss */
+
+.xx-hero {
+    background-color: #706F6F;
+    margin-top: -16px;
+}
+
+
+/* line 32, source/assets/fw-styles/styles.scss */
+
+.xx-hero-container {
+    padding: 32px 8px;
+}
+
+@media (min-height: 50rem) {
+    /* line 32, source/assets/fw-styles/styles.scss */
+    .xx-hero-container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+
+/* line 39, source/assets/fw-styles/styles.scss */
+
+.xx-hero-brand {
+    display: inline-block;
+    line-height: .85;
+    font-size: 80px;
+    border-left: 6px double #73EDFF;
+    padding: 0 10px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+
+/* line 48, source/assets/fw-styles/styles.scss */
+
+.xx-hero-btn {
+    margin-top: 16px;
+    min-width: 13.5em;
+}
+
+
+/* line 54, source/assets/fw-styles/styles.scss */
+
+.xx-section-header {
+    background-color: #000078;
+    height: 12rem;
+    display: flex;
+    padding: 8px 4px;
+    margin-bottom: 16px;
+}
+
+
+/* line 60, source/assets/fw-styles/styles.scss */
+
+.xx-section-header p {
+    margin-bottom: 0;
+    align-self: flex-end;
+}
+
+
+/* line 67, source/assets/fw-styles/styles.scss */
+
+.xx-guide-example-header {
+    background: #F0F0F0;
+    padding: 8px 8px;
+    margin-top: 16px;
+}
+
+
+/* line 71, source/assets/fw-styles/styles.scss */
+
+.xx-guide-example-header .h6 {
+    line-height: 1;
+    margin: 0;
+}
+
+
+/* line 77, source/assets/fw-styles/styles.scss */
+
+.xx-guide-example {
+    border: 4px solid #F0F0F0;
+    border-top: 0;
+    padding: 8px 8px;
+}
+
+
+/* line 81, source/assets/fw-styles/styles.scss */
+
+.xx-guide-example h2,
+.xx-guide-example h2.h2,
+.xx-guide-example h3.h3 {
+    margin-top: 0 !important;
+}
+
+
+/* line 84, source/assets/fw-styles/styles.scss */
+
+.xx-guide-example p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* line 89, source/assets/fw-styles/styles.scss */
+
+.xx-guide {
+    padding-bottom: 12px;
+}
+
+
+/* line 93, source/assets/fw-styles/styles.scss */
+
+.xx-block {
+    background: #F0F0F0;
+}
+
+
+/* line 98, source/assets/fw-styles/styles.scss */
+
+.xx-inverse hr,
+.xx-inverse .divider {
+    border-color: #878787;
+}
+
+
+/* line 105, source/assets/fw-styles/styles.scss */
+
+.xx-guide-example .card-xx,
+.xx-guide-example .list-group {
+    max-width: 295px;
+}
+
+
+/* line 110, source/assets/fw-styles/styles.scss */
+
+.xx-guide-example .card-xx2 {
+    max-width: 598px;
+}
+
+
+/* line 118, source/assets/fw-styles/styles.scss */
+
+.xx-code-highlight {
+    background: #F0F0F0;
+    margin-bottom: 16px;
+}
+
+
+/* line 121, source/assets/fw-styles/styles.scss */
+
+.xx-code-highlight pre {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+
+/* line 124, source/assets/fw-styles/styles.scss */
+
+.xx-code-highlight pre .hljs {
+    background: inherit;
+    padding: 8px 8px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    line-height: 1.1;
+}
+
+
+/* line 134, source/assets/fw-styles/styles.scss */
+
+.xx-code {
+    white-space: pre-line;
+}
+
+
+/* line 138, source/assets/fw-styles/styles.scss */
+
+code {
+    background: #F0F0F0;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    padding: .2em .5em;
+    color: #568C2F;
+    font-size: 0.75rem;
+}
+
+
+/* line 146, source/assets/fw-styles/styles.scss */
+
+.xx-float-none {
+    float: none;
+}
+
+
+/* line 151, source/assets/fw-styles/styles.scss */
+
+.xx-topbar {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+
+/* line 155, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-brand {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-decoration: none;
+    color: inherit;
+    float: left;
+    border-left: 3px double #73EDFF;
+    line-height: 1;
+    padding-left: 5px;
+    padding-top: 0;
+}
+
+@media (min-width: 544px) {
+    /* line 155, source/assets/fw-styles/styles.scss */
+    .xx-topbar .xx-brand {
+        font-size: 40px;
+    }
+}
+
+
+/* line 172, source/assets/fw-styles/styles.scss */
+
+.xx-topbar ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+/* line 177, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-fw-switcher {
+    font-size: 83%;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    border: 1px solid #73EDFF;
+    border-radius: 20px;
+    margin-top: 9.28px;
+    display: flex;
+    float: right;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    /* line 177, source/assets/fw-styles/styles.scss */
+    .xx-topbar .xx-fw-switcher {
+        float: left;
+        margin-left: 1em;
+    }
+}
+
+
+/* line 190, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-fw-switcher li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* line 193, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-fw-switcher li:before {
+    content: "";
+    margin-right: 0;
+    margin-top: 0;
+}
+
+
+/* line 199, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-fw-switcher a {
+    display: block;
+    padding: 3px 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1;
+}
+
+
+/* line 205, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-fw-switcher a:hover {
+    color: #73EDFF;
+    background: none;
+}
+
+@media (min-width: 768px) {
+    /* line 199, source/assets/fw-styles/styles.scss */
+    .xx-topbar .xx-fw-switcher a {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+
+/* line 215, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-fw-switcher a.is-active {
+    background-color: #73EDFF;
+    color: #000078;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+/* line 223, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-top-nav {
+    clear: both;
+    text-align: right;
+}
+
+@media (min-width: 768px) {
+    /* line 223, source/assets/fw-styles/styles.scss */
+    .xx-topbar .xx-top-nav {
+        clear: none;
+        float: right;
+    }
+}
+
+@media (max-width: 767.9px) {
+    /* line 230, source/assets/fw-styles/styles.scss */
+    .xx-topbar .xx-top-nav ul {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+}
+
+
+/* line 238, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-top-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    /* line 238, source/assets/fw-styles/styles.scss */
+    .xx-topbar .xx-top-nav li {
+        margin-top: 8px;
+    }
+}
+
+
+/* line 247, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-top-nav li a {
+    display: block;
+    padding: 1px 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* line 254, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-top-nav li a:hover,
+.xx-topbar .xx-top-nav li a.is-active {
+    border-color: #73EDFF;
+}
+
+
+/* line 258, source/assets/fw-styles/styles.scss */
+
+.xx-topbar .xx-top-nav li:before {
+    content: "";
+    margin-right: 0;
+    margin-top: 0;
+}
+
+
+/* line 269, source/assets/fw-styles/styles.scss */
+
+li:not(.is-active) .secondary-nav__level2 {
+    display: none;
+}
+
+
+/* line 273, source/assets/fw-styles/styles.scss */
+
+#secondary-nav li {
+    padding-left: 0;
+}
+
+
+/* line 279, source/assets/fw-styles/styles.scss */
+
+.xx-quote-example .list-group {
+    max-width: 100%;
+}
+
+
+/* line 284, source/assets/fw-styles/styles.scss */
+
+.xx-btn-example .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* line 292, source/assets/fw-styles/styles.scss */
+
+.xx-sticky-example .sticky {
+    margin-bottom: 20px;
+}
+
+
+/* line 295, source/assets/fw-styles/styles.scss */
+
+.xx-sticky-example .xx-sticky-container {
+    position: relative;
+    height: 1300px;
+}
+
+
+/* line 303, source/assets/fw-styles/styles.scss */
+
+.xx-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* line 308, source/assets/fw-styles/styles.scss */
+
+.xx-icons__item {
+    background-color: #F0F0F0;
+    text-align: center;
+    flex-basis: 77px;
+    margin: 0 4px 4px 0;
+    padding: 10px 3px;
+    line-height: 1.2;
+}
+
+
+/* line 315, source/assets/fw-styles/styles.scss */
+
+.xx-icons__item .icon {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0 10px;
+}
+
+
+/* line 322, source/assets/fw-styles/styles.scss */
+
+.xx-icons__class {
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+
+/* line 325, source/assets/fw-styles/styles.scss */
+
+.xx-icons__class span {
+    display: block;
+}
+
+
+/* line 331, source/assets/fw-styles/styles.scss */
+
+.xx-colors {
+    background-color: #F0F0F0;
+    border: 5px solid #F0F0F0;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+/* line 338, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color {
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* Colors */
+
+
+/* line 344, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color1 {
+    background-color: #000078;
+}
+
+
+/* line 347, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color2 {
+    background-color: #73EDFF;
+}
+
+
+/* line 350, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color3 {
+    background-color: #BD9EFF;
+}
+
+
+/* line 353, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color4 {
+    background-color: #FFE000;
+}
+
+
+/* line 356, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color5 {
+    background-color: #FF87FF;
+}
+
+
+/* line 359, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color6 {
+    background-color: #38ff90;
+}
+
+
+/* line 362, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color7 {
+    background-color: #FF7D87;
+}
+
+
+/* line 365, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color14 {
+    background-color: #FF0000;
+}
+
+
+/* Backgrounds */
+
+
+/* line 370, source/assets/fw-styles/styles.scss */
+
+.xx-colors-bg--color0 {
+    background-color: rgba(0, 0, 120, 0.6);
+}
+
+
+/* line 373, source/assets/fw-styles/styles.scss */
+
+.xx-colors-bg--color1 {
+    background-color: rgba(0, 0, 120, 0.3);
+}
+
+
+/* line 376, source/assets/fw-styles/styles.scss */
+
+.xx-colors-bg--color2 {
+    background-color: #D5FAFF;
+}
+
+
+/* line 379, source/assets/fw-styles/styles.scss */
+
+.xx-colors-bg--color3 {
+    background-color: #EBE2FF;
+}
+
+
+/* line 382, source/assets/fw-styles/styles.scss */
+
+.xx-colors-bg--color4 {
+    background-color: #FFF6B2;
+}
+
+
+/* line 385, source/assets/fw-styles/styles.scss */
+
+.xx-colors-bg--color5 {
+    background-color: #FFDBFF;
+}
+
+
+/* line 388, source/assets/fw-styles/styles.scss */
+
+.xx-colors-bg--color6 {
+    background-color: #C3FFDE;
+}
+
+
+/* line 391, source/assets/fw-styles/styles.scss */
+
+.xx-colors-bg--color7 {
+    background-color: #FFD8DB;
+}
+
+
+/* line 394, source/assets/fw-styles/styles.scss */
+
+.xx-colors-bg--color14 {
+    background-color: #FFD4D4;
+}
+
+
+/* Gray */
+
+
+/* line 400, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color8 {
+    background-color: #706F6F;
+}
+
+
+/* line 403, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color9 {
+    background-color: #878787;
+}
+
+
+/* line 406, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color10 {
+    background-color: #D0D0D0;
+}
+
+
+/* line 409, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color11 {
+    background-color: #F0F0F0;
+}
+
+
+/* line 412, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color12 {
+    background-color: #F8F8F8;
+}
+
+
+/* line 415, source/assets/fw-styles/styles.scss */
+
+.xx-colors--color13 {
+    background-color: #FFFFFF;
+}
+
+
+/* line 421, source/assets/fw-styles/styles.scss */
+
+.xx-grid {
+    padding: 0;
+}
+
+
+/* line 423, source/assets/fw-styles/styles.scss */
+
+.xx-grid .row {
+    margin-bottom: 8px;
+}
+
+
+/* line 428, source/assets/fw-styles/styles.scss */
+
+.xx-grid-block {
+    background-color: #F0F0F0;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+/* line 438, source/assets/fw-styles/styles.scss */
+
+.xx-modal-show .modal {
+    display: block;
+    position: static;
+    background-color: transparent;
+}
+
+
+/* line 14, source/assets/scss/mixins/_clearfix.scss */
+
+.xx-dropdown:before,
+.xx-dropdown:after {
+    content: " ";
+    display: table;
+}
+
+
+/* line 19, source/assets/scss/mixins/_clearfix.scss */
+
+.xx-dropdown:after {
+    clear: both;
+}
+
+
+/* line 448, source/assets/fw-styles/styles.scss */
+
+.xx-dropdown .dropdown {
+    float: left;
+    margin-right: 1rem;
+}
+
+
+/* line 456, source/assets/fw-styles/styles.scss */
+
+.xx-thumbnails .img-thumbnail {
+    margin-right: 8px;
+}
+
+
+/* line 461, source/assets/fw-styles/styles.scss */
+
+.xx-demo-thumbnails {
+    width: 320px;
+    height: 230px;
+}
+
+
+/* line 466, source/assets/fw-styles/styles.scss */
+
+.xx-figure {
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* line 472, source/assets/fw-styles/styles.scss */
+
+.xx-sidebar-wrap {
+    margin-top: -16px;
+}
+
+
+/* line 478, source/assets/fw-styles/styles.scss */
+
+.xx-center-block {
+    max-width: 400px;
+    background-color: #F0F0F0;
+    padding: 1em 1.5em;
+}
+
+
+/* line 484, source/assets/fw-styles/styles.scss */
+
+.xx-vertical-center {
+    min-height: 200px;
+}
+
+
+/* line 486, source/assets/fw-styles/styles.scss */
+
+.xx-vertical-center>div {
+    background-color: #F0F0F0;
+    padding: 1em 1.5em;
+}
+
+
+/* line 492, source/assets/fw-styles/styles.scss */
+
+.xx-background-helper {
+    padding: 1em 1.5em;
+}
+
+
+/* line 496, source/assets/fw-styles/styles.scss */
+
+.xx-background-color-helper {
+    background-color: #000078;
+}
+
+
+/* line 499, source/assets/fw-styles/styles.scss */
+
+.xx-background-color-helper-black {
+    background-color: black;
+}
+
+
+/* Inner visualization fixes  */
+
+
+/**
+ * This avoids bad rendering in headers
+ * inside example page header.html
+ */
+
+
+/* line 514, source/assets/fw-styles/styles.scss */
+
+.xx-guide-example header.header-2 .custom-spacing:last-child,
+.xx-guide-example header.header-3 .custom-spacing:last-child,
+.xx-guide-example header.header-4 .custom-spacing:last-child {
+    padding-right: 14px;
+}
+
+
+/* Inner visualization fixes */
+
+@font-face {
+    font-family: 'uoc-sans';
+    src: url("../fonts/UOCSans-Regular.woff2") format("woff2"), url("../fonts/UOCSans-Regular.woff") format("woff"), url("../fonts/UOCSans-Regular.ttf") format("truetype"), url("../fonts/UOCSans-Regular.svg#svgFontName") format("svg");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'uoc-sans';
+    src: url("../fonts/UOCSans-Italic.woff2") format("woff2"), url("../fonts/UOCSans-Italic.woff") format("woff"), url("../fonts/UOCSans-Italic.ttf") format("truetype"), url("../fonts/UOCSans-Italic.svg#svgFontName") format("svg");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'uoc-sans';
+    src: url("../fonts/UOCSans-Bold.woff2") format("woff2"), url("../fonts/UOCSans-Bold.woff") format("woff"), url("../fonts/UOCSans-Bold.ttf") format("truetype"), url("../fonts/UOCSans-Bold.svg#svgFontName") format("svg");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'uoc-serif';
+    src: url("../fonts/UOCSerif-Regular.woff2") format("woff2"), url("../fonts/UOCSerif-Regular.woff") format("woff"), url("../fonts/UOCSerif-Regular.ttf") format("truetype"), url("../fonts/UOCSerif-Regular.svg#svgFontName") format("svg");
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+/** header height for mobile devices **/
+
+
+/* Rem Units */
+
+
+/* Rem Units */
+
+
+/* Prefix */
+
+
+/* Flexbox */
+
+
+/* SASS functions */
+
+
+/* Styles */
+
+
+/* Others */
+
+
+/* line 95, source/assets/scss/mixins/_utils.scss */
+
+.text-justify {
+    text-align: justify;
+}
+
+
+/*@import "core/normalize";
+@import "core/reset";*/
+
+
+/* line 1, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-btnlink {
+    font-size: 1rem;
+}
+
+
+/* line 5, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-btn--large:focus,
+.xx-portal-btn--large.focus,
+.xx-portal-btn--large:hover,
+.xx-portal-btn--large.hover,
+.xx-portal-btn--large:active,
+.xx-portal-btn--large.active {
+    background-color: #a6f4ff;
+}
+
+
+/* line 10, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-sliding-border {
+    border-width: 0 0 1px 0;
+}
+
+
+/* line 12, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-sliding-border li {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: #D0D0D0;
+}
+
+
+/* line 16, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-sliding-border li a {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    width: 0px;
+    transition: 1.15s ease;
+    white-space: nowrap;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+/* line 26, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-sliding-border li a:focus,
+.xx-portal-sliding-border li a.focus,
+.xx-portal-sliding-border li a:hover,
+.xx-portal-sliding-border li a.hover {
+    border-bottom: 2px solid #73EDFF;
+    width: 100%;
+    color: #0000ab;
+}
+
+
+/* line 30, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-sliding-border li a:focus span,
+.xx-portal-sliding-border li a.focus span,
+.xx-portal-sliding-border li a:hover span,
+.xx-portal-sliding-border li a.hover span {
+    color: #0000ab;
+}
+
+
+/* line 35, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-sliding-border li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: #73EDFF;
+}
+
+
+/* line 49, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-sliding-border>li.is-active>a {
+    color: #000078;
+    border-bottom: 2px solid #73EDFF;
+    width: 100%;
+}
+
+
+/* line 55, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-sliding-border>li.is-active>ul>li.is-active>a {
+    color: #000078;
+    border-bottom: 2px solid #73EDFF;
+    width: 100%;
+}
+
+
+/* line 59, source/assets/scss/portal/_portal-button.scss */
+
+.xx-portal-sliding-border>li.is-active>ul>li.is-active>a:focus,
+.xx-portal-sliding-border>li.is-active>ul>li.is-active>a.focus,
+.xx-portal-sliding-border>li.is-active>ul>li.is-active>a:hover,
+.xx-portal-sliding-border>li.is-active>ul>li.is-active>a.hover {
+    color: #0000ab;
+}
+
+
+/* line 1, source/assets/scss/portal/_portal-cards.scss */
+
+.xx-portal-card-block {
+    padding: 1rem;
+}
+
+
+/* line 3, source/assets/scss/portal/_portal-cards.scss */
+
+.xx-portal-card-block.xx-portal-card-block-border {
+    margin-bottom: 1rem;
+    border-style: solid;
+    border-color: #D0D0D0;
+    border-width: 1px;
+}
+
+
+/* line 9, source/assets/scss/portal/_portal-cards.scss */
+
+.xx-portal-card-block h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    line-height: 1.1;
+}
+
+
+/* line 15, source/assets/scss/portal/_portal-cards.scss */
+
+.xx-portal-card-block p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* line 19, source/assets/scss/portal/_portal-cards.scss */
+
+.xx-portal-card-block span {
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+
+/* line 23, source/assets/scss/portal/_portal-cards.scss */
+
+.xx-portal-card-block h4 {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+
+/* line 28, source/assets/scss/portal/_portal-cards.scss */
+
+.xx-portal-background-white {
+    background: #FFFFFF;
+}
+
+
+/* line 1, source/assets/scss/portal/_portal-container.scss */
+
+div.xx-portal-hero-container {
+    padding: 4rem 1rem;
+}
+
+
+/* line 4, source/assets/scss/portal/_portal-container.scss */
+
+div.xx-portal-hero-container h2.h1 {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+
+/* line 10, source/assets/scss/portal/_portal-container.scss */
+
+div.xx-portal-hero-container a.btn {
+    margin-top: 2rem;
+}
+
+
+/* line 17, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>h1,
+.xx-portal-section-text>.h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+
+/* line 22, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>h2,
+.xx-portal-section-text>.h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+
+/* line 31, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text code {
+    font-size: 0.75rem;
+}
+
+
+/* line 34, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text .xx-code-highlight pre .hljs {
+    padding: 1rem 1rem;
+    line-height: 1.5;
+}
+
+
+/* line 38, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>h6,
+.xx-portal-section-text>.h6-icons {
+    font-size: 0.75rem;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+
+/* line 43, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>h6,
+.xx-portal-section-text>.h6 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 83%;
+    letter-spacing: 0.075em;
+}
+
+
+/* line 49, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>h3,
+.xx-portal-section-text>.h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.1;
+}
+
+
+/* line 54, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>h5,
+.xx-portal-section-text>.h5 {
+    font-size: 1rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+
+/* line 59, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>h4,
+.xx-portal-section-text>.h4 {
+    font-size: 1.25rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+
+/* line 69, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>.alert {
+    background: #fafafa;
+    font-size: 1rem;
+}
+
+
+/* line 73, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>.alert>* {
+    color: inherit;
+}
+
+
+/* line 77, source/assets/scss/portal/_portal-container.scss */
+
+.xx-portal-section-text>.alert code {
+    color: #568C2F;
+}
+
+
+/* line 2, source/assets/scss/portal/_portal-section-header.scss */
+
+.xx-portal-section-header h1 {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-weight: 500;
+    padding: .5rem;
+}
+
+
+/* line 8, source/assets/scss/portal/_portal-section-header.scss */
+
+.xx-portal-section-header .xx-section-header {
+    padding: 1rem .5rem;
+    margin-bottom: 2rem;
+}
+
+
+/* line 11, source/assets/scss/portal/_portal-section-header.scss */
+
+.xx-portal-section-header .xx-section-header p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+
+/* line 1, source/assets/scss/portal/_portal-topbar.scss */
+
+.xx-portal-tolbar {
+    margin-bottom: 1rem;
+}
+
+
+/* line 3, source/assets/scss/portal/_portal-topbar.scss */
+
+.xx-portal-tolbar .xx-brand {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+
+/* line 7, source/assets/scss/portal/_portal-topbar.scss */
+
+.xx-portal-tolbar .xx-top-nav li {
+    margin-top: 1rem;
+}
+
+
+/* line 9, source/assets/scss/portal/_portal-topbar.scss */
+
+.xx-portal-tolbar .xx-top-nav li a {
+    font-size: 1rem;
+}
+
+
+/* line 11, source/assets/scss/portal/_portal-topbar.scss */
+
+.xx-portal-tolbar .xx-top-nav li a:hover,
+.xx-portal-tolbar .xx-top-nav li a.hover,
+.xx-portal-tolbar .xx-top-nav li a:focus,
+.xx-portal-tolbar .xx-top-nav li a.focus,
+.xx-portal-tolbar .xx-top-nav li a.active,
+.xx-portal-tolbar .xx-top-nav li a:active {
+    border-color: #000078;
+}
+
+
+/* line 14, source/assets/scss/portal/_portal-topbar.scss */
+
+.xx-portal-tolbar .xx-top-nav li a.is-active {
+    border-color: #000078;
+}
+
+
+/* line 19, source/assets/scss/portal/_portal-topbar.scss */
+
+.xx-portal-tolbar ul {
+    margin-bottom: 1rem;
+}

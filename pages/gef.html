@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>GEF - Retícula</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="http://cv.uoc.edu/UOC/GEFv2/gef/css/gef.min.css?v=">
+    <link rel="stylesheet" type="text/css" href="/css/github.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="off-canvas-wrap" id="off-canvas-wrap" data-nav>
+        <div class="topbar xx-topbar xx-portal-tolbar">
+            <div class="container"><a class="xx-brand" href="/UOC/GEFv2/">GEF</a>
+                <nav class="xx-top-nav">
+                    <ul>
+                        <li><a href="/UOC/GEFv2/es/demos/demos.html">Demos</a></li>
+                        <li><a href="/UOC/GEFv2/es/docs/documentation.html">Documentación</a></li>
+                        <li><a href="/UOC/GEFv2/es/resources/resources.html">Recursos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="secondary-nav-trigger">
+            <div class="container" data-collapse><a class="secondary-nav-trigger__link" href="#secondary-nav" data-collapse-trigger>Menú<span class="icon icon--caret-bottom float-right" aria-hidden="true"></span></a>
+                <div class="collapse__content" data-collapse-content>
+                    <div class="secondary-nav-alt-container" data-collapse-inner data-append-container="secondary-nav"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container xx-guide">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="xx-portal-section-text">
+                        <h1 class="h1">Retícula</h1>
+                        <p>Retícula de 12 columnas que se utiliza mediante clases específicas, para facilitar la composición de cualquier tipo de layout y sus variaciones en los distintos <a href="breakpoints.html">puntos de corte</a>.</p>
+                        <h2>Contenido</h2>
+                        <ul class="list--special">
+                            <li><a href="#how-to-use">Cómo se usa</a></li>
+                            <li><a href="#options">Opciones</a></li>
+                            <li><a href="#examples">Ejemplos</a></li>
+                            <li><a href="#flexbox">Retícula flexible - Flexbox</a></li>
+                        </ul>
+                        <h2 id="how-to-use">Cómo se usa</h2>
+                        <p>Para utilizar la retícula, se necesitan tres tipos de elementos: los contenedores, las filas y las columnas.</p>
+                        <p>Los contenedores <code>.container</code> son los encargados de centrar el contenido y de alinear la retícula.</p>
+                        <p>Las filas <code>.row</code> son grupos horizontales de columnas que permiten la alineación correcta de las columnas.</p>
+                        <p>El contenido se debe poner dentro de columnas, que deben ser elementos hijos directos inmediatos de una fila <code>.row</code>.</p>
+                        <p>Mediante las clases de columna indicamos el número de columnas (dentro de las 12 totales de la retícula) que queremos utilizar. Las clases de columna constan del prefijo <code>col-</code>, el punto de corte al que estamos aplicando
+                            la retícula <code>xs-</code>, <code>sm-</code>, <code>md-</code>, <code>lg-</code> o <code>xl-</code>, y el número de columnas. Por ejemplo, si queremos que un elemento ocupe 4 columnas en el breakpoint medio, usaremos la clase
+                            <code>.col-md-4</code>.</p>
+                        <p>Las columnas son fluidas (porcentuales) y tienen una separación fija entre ellas.</p>
+                        <p>Disponemos de 5 retículas, una para cada <a href="">punto de corte</a>. Cada una de ellas se aplica en el punto de corte en cuestión, y en todos los superiores.</p>
+                        <div class="xx-guide-example-header">
+                            <h3 class="h6">Ejemplo simple de uso de la retícula</h3>
+                        </div>
+                        <div class="xx-guide-example">
+                            <div class="container xx-grid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="xx-grid-block">Elemento de 4 columnas</div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="xx-grid-block">Elemento de 4 columnas</div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="xx-grid-block">Elemento de 4 columnas</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xx-code-highlight">
+                            <pre class="xx-code"><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;Elemento de 4 columnas&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;Elemento de 4 columnas&lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;Elemento de 4 columnas&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        </div>
+                        <h2 id="options">Opciones</h2>
+                        <p>Podemos ver las distintas clases disponibles para crear retículas en esta tabla:</p>
+                        <div class="xx-code-highlight">
+                            <table class="table">
+                                <thead class="table__header thead--inverse">
+                                    <tr>
+                                        <th>Nomenclatura</th>
+                                        <th>Breakpoint</th>
+                                        <th>Prefijo de la clase</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>XS - Extra pequeño</td>
+                                        <td>Ninguno</td>
+                                        <td><code>.col-xs</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>SM - Pequeño</td>
+                                        <td>34em<br><span class="text-small">544px</span></td>
+                                        <td><code>.col-sm</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MD - Mediano</td>
+                                        <td>48em<br><span class="text-small">768px</span></td>
+                                        <td><code>.col-md</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>LG - Grande</td>
+                                        <td>62em<br><span class="text-small">992px</span></td>
+                                        <td><code>.col-lg</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>XL - Extra grande</td>
+                                        <td>75em<br><span class="text-small">1200px</span></td>
+                                        <td><code>.col-xl</code></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h2 id="examples">Ejemplos</h2>
+                        <p>Utilizando únicamente las clases <code>.col-md-*</code> podemos crear una retícula simple en la que los distintos elementos se muestran uno debajo de otro en los puntos de cortes más pequeños, y horizontalmente en tamaños mayores.</p>
+                        <div class="xx-guide-example-header">
+                            <h3 class="h6">Ejemplo de retícula simple</h3>
+                        </div>
+                        <div class="xx-guide-example">
+                            <div class="container xx-grid">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="xx-grid-block">.col-md-2</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="xx-grid-block">.col-md-2</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="xx-grid-block">.col-md-2</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="xx-grid-block">.col-md-2</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="xx-grid-block">.col-md-2</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="xx-grid-block">.col-md-2</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="xx-grid-block">.col-md-3</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="xx-grid-block">.col-md-3</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="xx-grid-block">.col-md-6</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xx-code-highlight">
+                            <pre class="xx-code"><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;.col-md-2&lt;/div&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;.col-md-2&lt;/div&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;.col-md-2&lt;/div&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;.col-md-2&lt;/div&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;.col-md-2&lt;/div&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;.col-md-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-3&quot;&gt;.col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-md-3&quot;&gt;.col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div
+</code></pre>
+                        </div>
+                        <p>Podemos refinar cómo queremos que nuestra retícula se vea en otros puntos de corte combinando las distintas clases de columna.</p>
+                        <div class="xx-guide-example-header">
+                            <h3 class="h6">Ejemplo de retícula para viewport pequeño y mediano</h3>
+                        </div>
+                        <div class="xx-guide-example">
+                            <div class="container xx-grid">
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="xx-grid-block">.col-xs-6 <br> .col-md-3
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="xx-grid-block">.col-xs-6 <br> .col-md-3
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-6">
+                                        <div class="xx-grid-block">.col-xs-6 <br> .col-md-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xx-code-highlight">
+                            <pre class="xx-code"><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;.col-xs-6 .col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;.col-xs-6 .col-md-3&lt;/div&gt;
+    &lt;div class=&quot;col-xs-6 col-md-6&quot;&gt;.col-xs-6 .col-md-6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+</code></pre>
+                        </div>
+                        <h2 id="flexbox">Retícula flexible - Flexbox</h2>
+                        <p>En el caso de disponer de una colección de elementos con diferentes alturas se puede alinear todas las alturas al elemento más alto mediante la clase <code>.flexbox-layout</code> que activa las retículas del tipo caja flexible.
+                            A continuación por cada uno de los elementos repetidos se debe añadir la clase <code>.flexbox--item</code> para alinear las alturas.
+                        </p>
+                        <div class="xx-guide-example-header">
+                            <h3 class="h6">Ejemplo de retícula simple</h3>
+                        </div>
+                        <div class="xx-guide-example">
+                            <div class="container xx-grid">
+                                <div class="row flexbox-layout">
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <div class="card flexbox--item">
+                                            <div class="card__contents">
+                                                <h3>Ellentesque habitant morbi tristique senectus et netus</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <div class="card flexbox--item">
+                                            <div class="card__contents">
+                                                <h3>Ellentesque habitant morbi tristique senectus et netus</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <div class="card flexbox--item">
+                                            <div class="card__contents">
+                                                <h3>Ellentesque habitant morbi tristique senectus et netus</h3>
+                                                <p>Nulla facilisi. Praesent ullamcorper magna eget nunc vehicula, nec vestibulum diam aliquam. Duis malesuada bibendum fringilla.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <div class="card flexbox--item">
+                                            <div class="card__contents">
+                                                <h3>Ellentesque habitant morbi tristique senectus et netus</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xx-code-highlight">
+                            <pre class="xx-code"><code class="language-html">&lt;div class=&quot;row flexbox-layout&quot;&gt;
+  &lt;div class=&quot;col-xs-12 col-md-3 col-lg-3&quot;&gt;
+    &lt;div class=&quot;card flexbox--item&quot;&gt;
+      &lt;div class=&quot;card__contents&quot;&gt;
+        &lt;h3&gt;Ellentesque habitant morbi tristique senectus et netus&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-xs-12 col-md-3 col-lg-3&quot;&gt;
+    &lt;div class=&quot;card flexbox--item&quot;&gt;
+      &lt;div class=&quot;card__contents&quot;&gt;
+        &lt;h3&gt;Ellentesque habitant morbi tristique senectus et netus&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-xs-12 col-md-3 col-lg-3&quot;&gt;
+    &lt;div class=&quot;card flexbox--item&quot;&gt;
+      &lt;div class=&quot;card__contents&quot;&gt;
+        &lt;h3&gt;Ellentesque habitant morbi tristique senectus et netus&lt;/h3&gt;
+        &lt;p&gt;Nulla facilisi. Praesent ullamcorper magna eget nunc vehicula, nec vestibulum diam aliquam. Duis malesuada bibendum fringilla.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-xs-12 col-md-3 col-lg-3&quot;&gt;
+    &lt;div class=&quot;card flexbox--item&quot;&gt;
+      &lt;div class=&quot;card__contents&quot;&gt;
+        &lt;h3&gt;Ellentesque habitant morbi tristique senectus et netus&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jade Mixins -------------------------------->
+                <!-- Navigation elements -------------------------------->
+                <nav class="col-md-3 secondary-nav-main-container" data-append-container="secondary-nav">
+                    <ul class="secondary-nav xx-portal-sliding-border" id="secondary-nav" data-append>
+                        <li data-group="index"><a href="/UOC/GEFv2/es/guide/gef.html" title="Inicio"><span class="icon icon--arrow-right icon--before is-active-hidden" aria-hidden="true"></span><span class="icon icon--arrow-down icon--before is-active-visible" aria-hidden="true"></span>Inicio</a>
+                            <ul class="secondary-nav__level2">
+                                <li><a href="/UOC/GEFv2/es/guide/use.html" title="Cómo utilizarla"><span class="icon icon--chevron-right icon--before"></span>Cómo utilizarla</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/css.html" title="Guía CSS"><span class="icon icon--chevron-right icon--before"></span>Guía CSS</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/sass.html" title="Guía Sass"><span class="icon icon--chevron-right icon--before"></span>Guía Sass</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="is-active is-trigger-active" data-group="layout"><a href="/UOC/GEFv2/es/guide/layout.html" title="Layout"><span class="icon icon--arrow-right icon--before is-active-hidden" aria-hidden="true"></span><span class="icon icon--arrow-down icon--before is-active-visible" aria-hidden="true"></span>Layout</a>
+                            <ul class="secondary-nav__level2">
+                                <li class="is-active"><a href="/UOC/GEFv2/es/guide/grid.html" title="Retícula"><span class="icon icon--chevron-right icon--before"></span>Retícula</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/breakpoints.html" title="Puntos de corte"><span class="icon icon--chevron-right icon--before"></span>Puntos de corte</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-group="basics"><a href="/UOC/GEFv2/es/guide/basics.html" title="Componentes básicos"><span class="icon icon--arrow-right icon--before is-active-hidden" aria-hidden="true"></span><span class="icon icon--arrow-down icon--before is-active-visible" aria-hidden="true"></span>Componentes básicos</a>
+                            <ul class="secondary-nav__level2">
+                                <li><a href="/UOC/GEFv2/es/guide/typography.html" title="Tipografía"><span class="icon icon--chevron-right icon--before"></span>Tipografía</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/colors.html" title="Colores"><span class="icon icon--chevron-right icon--before"></span>Colores</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/lists.html" title="Listas"><span class="icon icon--chevron-right icon--before"></span>Listas</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/list-groups.html" title="Listados de bloque"><span class="icon icon--chevron-right icon--before"></span>Listados de bloque</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/buttons.html" title="Botones"><span class="icon icon--chevron-right icon--before"></span>Botones</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/forms.html" title="Formularios"><span class="icon icon--chevron-right icon--before"></span>Formularios</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/tables.html" title="Tablas"><span class="icon icon--chevron-right icon--before"></span>Tablas</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/images.html" title="Imágenes"><span class="icon icon--chevron-right icon--before"></span>Imágenes</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/media.html" title="Media"><span class="icon icon--chevron-right icon--before"></span>Media</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/ruler.html" title="Filetes"><span class="icon icon--chevron-right icon--before"></span>Filetes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-group="interface"><a href="/UOC/GEFv2/es/guide/interface.html" title="Componentes de interfaz"><span class="icon icon--arrow-right icon--before is-active-hidden" aria-hidden="true"></span><span class="icon icon--arrow-down icon--before is-active-visible" aria-hidden="true"></span>Componentes de interfaz</a>
+                            <ul class="secondary-nav__level2">
+                                <li><a href="/UOC/GEFv2/es/guide/icons.html" title="Iconos"><span class="icon icon--chevron-right icon--before"></span>Iconos</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/alerts.html" title="Alertas"><span class="icon icon--chevron-right icon--before"></span>Alertas</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/cards.html" title="Tarjetas"><span class="icon icon--chevron-right icon--before"></span>Tarjetas</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/breadcrumb.html" title="Breadcrumb"><span class="icon icon--chevron-right icon--before"></span>Breadcrumb</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/pagination.html" title="Paginación"><span class="icon icon--chevron-right icon--before"></span>Paginación</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/alpha-list.html" title="Listado alfabético"><span class="icon icon--chevron-right icon--before"></span>Listado alfabético</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/quotes.html" title="Citas"><span class="icon icon--chevron-right icon--before"></span>Citas</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/calendar.html" title="Calendario"><span class="icon icon--chevron-right icon--before"></span>Calendario</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/header.html" title="Cabecera"><span class="icon icon--chevron-right icon--before"></span>Cabecera</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/secondary-nav.html" title="Navegación secundaria"><span class="icon icon--chevron-right icon--before"></span>Navegación secundaria</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/full-width.html" title="Bloques full-width"><span class="icon icon--chevron-right icon--before"></span>Bloques full-width</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/footer.html" title="Footer"><span class="icon icon--chevron-right icon--before"></span>Footer</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-group="js"><a href="/UOC/GEFv2/es/guide/javascript.html" title="Componentes JavaScript"><span class="icon icon--arrow-right icon--before is-active-hidden" aria-hidden="true"></span><span class="icon icon--arrow-down icon--before is-active-visible" aria-hidden="true"></span>Componentes JavaScript</a>
+                            <ul class="secondary-nav__level2">
+                                <li><a href="/UOC/GEFv2/es/guide/dropdown.html" title="Dropdown"><span class="icon icon--chevron-right icon--before"></span>Dropdown</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/collapse.html" title="Collapse"><span class="icon icon--chevron-right icon--before"></span>Collapse</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/modal.html" title="Modal"><span class="icon icon--chevron-right icon--before"></span>Modal</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/tabs.html" title="Pestañas"><span class="icon icon--chevron-right icon--before"></span>Pestañas</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/sticky.html" title="Sticky"><span class="icon icon--chevron-right icon--before"></span>Sticky</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/sticky-scroll.html" title="Sticky Scroll"><span class="icon icon--chevron-right icon--before"></span>Sticky Scroll</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-group="helpers"><a href="/UOC/GEFv2/es/guide/helpers.html" title="Helpers"><span class="icon icon--arrow-right icon--before is-active-hidden" aria-hidden="true"></span><span class="icon icon--arrow-down icon--before is-active-visible" aria-hidden="true"></span>Helpers</a>
+                            <ul class="secondary-nav__level2">
+                                <li><a href="/UOC/GEFv2/es/guide/rwd-helpers.html" title="Responsive helpers"><span class="icon icon--chevron-right icon--before"></span>Responsive helpers</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/media-object.html" title="Media object"><span class="icon icon--chevron-right icon--before"></span>Media object</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/alignment.html" title="Alineación"><span class="icon icon--chevron-right icon--before"></span>Alineación</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/spacers.html" title="Espaciadores"><span class="icon icon--chevron-right icon--before"></span>Espaciadores</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/colors-and-backgrounds.html" title="Colores y fondos"><span class="icon icon--chevron-right icon--before"></span>Colores y fondos</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/accessibility.html" title="Accesibilidad"><span class="icon icon--chevron-right icon--before"></span>Accesibilidad</a>
+                                </li>
+                                <li><a href="/UOC/GEFv2/es/guide/browser-detection.html" title="Browser detection"><span class="icon icon--chevron-right icon--before"></span>Browser detection</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div><a class="sticky-scroll" href="#top" data-goto="#top"><span role="presentation"><span class="icon icon--scroll-to icon--info--small" aria-hidden="true"></span><span class="icon-alt">Subir</span></span></a>
+
+    </div>
+
+    <script src="http://cv.uoc.edu/UOC/GEFv2/gef/js/gef.min.js"></script>
+</body>
+
+</html>
