@@ -1,4 +1,4 @@
-Este es un proeycto del grupo Certified Team.
+Este es un proyecto del grupo Certified Team.
 
 Integrantes:
 
